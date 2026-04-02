@@ -1,0 +1,441 @@
+{
+    "version": 3,
+    "deployment": {
+        "manifest": {
+            "time": "2026-04-02T00:46:04.333960033Z",
+            "magic": "",
+            "version": ""
+        },
+        "secrets_providers": {
+            "type": "service",
+            "state": {
+                "url": "https://api.pulumi.com",
+                "owner": "leonardovecker-gmail-com",
+                "project": "rocketseat-iac",
+                "stack": "stg"
+            }
+        },
+        "resources": [
+            {
+                "urn": "urn:pulumi:stg::rocketseat-iac::pulumi:pulumi:Stack::rocketseat-iac-stg",
+                "custom": false,
+                "type": "pulumi:pulumi:Stack",
+                "outputs": {
+                    "ecrName": "segundo-teste-pos-rocketseat",
+                    "ecrRepositoryUrl": "390403897676.dkr.ecr.us-east-2.amazonaws.com/segundo-teste-pos-rocketseat",
+                    "firstBucket": {
+                        "accelerationStatus": "",
+                        "acl": null,
+                        "arn": "arn:aws:s3:::first-bucket-widget-server-stg",
+                        "bucket": "first-bucket-widget-server-stg",
+                        "bucketDomainName": "first-bucket-widget-server-stg.s3.amazonaws.com",
+                        "bucketNamespace": "global",
+                        "bucketPrefix": "",
+                        "bucketRegion": "us-east-2",
+                        "bucketRegionalDomainName": "first-bucket-widget-server-stg.s3.us-east-2.amazonaws.com",
+                        "corsRules": [],
+                        "forceDestroy": false,
+                        "grants": [
+                            {
+                                "id": "6d7a067016ec12419d0ffd236a382cd0a0c98dd9cd512b1960a995d51d8e9d46",
+                                "permissions": [
+                                    "FULL_CONTROL"
+                                ],
+                                "type": "CanonicalUser",
+                                "uri": ""
+                            }
+                        ],
+                        "hostedZoneId": "Z2O1EMRO9K5GLX",
+                        "id": "first-bucket-widget-server-stg",
+                        "lifecycleRules": [],
+                        "logging": null,
+                        "objectLockConfiguration": null,
+                        "objectLockEnabled": false,
+                        "policy": "",
+                        "region": "us-east-2",
+                        "replicationConfiguration": null,
+                        "requestPayer": "BucketOwner",
+                        "serverSideEncryptionConfiguration": {
+                            "rule": {
+                                "applyServerSideEncryptionByDefault": {
+                                    "kmsMasterKeyId": "",
+                                    "sseAlgorithm": "AES256"
+                                },
+                                "bucketKeyEnabled": false
+                            }
+                        },
+                        "tags": {
+                            "IAC": "true"
+                        },
+                        "tagsAll": {
+                            "IAC": "true"
+                        },
+                        "urn": "urn:pulumi:stg::rocketseat-iac::aws:s3/bucket:Bucket::first-bucket-widget-server-stg",
+                        "versioning": {
+                            "enabled": false,
+                            "mfaDelete": false
+                        },
+                        "website": null,
+                        "websiteDomain": null,
+                        "websiteEndpoint": null
+                    },
+                    "firstBucketArn": "arn:aws:s3:::first-bucket-widget-server-stg",
+                    "firstBucketInfo": "first-bucket-widget-server-stg",
+                    "firstBucketName": "first-bucket-widget-server-stg"
+                },
+                "created": "2026-04-02T00:31:13.809582818Z",
+                "modified": "2026-04-02T00:31:13.809582818Z",
+                "sourcePosition": "project:///node_modules/.pnpm/@pulumi+pulumi@3.228.0_typescript@5.9.3/node_modules/@pulumi/runtime/stack.ts#37,19",
+                "stackTrace": [
+                    {
+                        "sourcePosition": "project:///node_modules/.pnpm/@pulumi+pulumi@3.228.0_typescript@5.9.3/node_modules/@pulumi/runtime/stack.ts#37,19"
+                    },
+                    {
+                        "sourcePosition": "project:///node_modules/.pnpm/@pulumi+pulumi@3.228.0_typescript@5.9.3/node_modules/@pulumi/cmd/run/run.ts#603,38"
+                    }
+                ]
+            },
+            {
+                "urn": "urn:pulumi:stg::rocketseat-iac::pulumi:providers:aws::default_7_24_0",
+                "custom": true,
+                "id": "2e4b9c34-0880-42ae-b61b-49d8ada5584e",
+                "type": "pulumi:providers:aws",
+                "inputs": {
+                    "__internal": {},
+                    "region": "us-east-2",
+                    "skipCredentialsValidation": "false",
+                    "skipRegionValidation": "true",
+                    "version": "7.24.0"
+                },
+                "outputs": {
+                    "region": "us-east-2",
+                    "skipCredentialsValidation": "false",
+                    "skipRegionValidation": "true",
+                    "version": "7.24.0"
+                },
+                "created": "2026-04-02T00:31:21.885589318Z",
+                "modified": "2026-04-02T00:31:21.885589318Z"
+            },
+            {
+                "urn": "urn:pulumi:stg::rocketseat-iac::aws:ecr/repository:Repository::segundo-teste-post-rocketseat",
+                "custom": true,
+                "id": "segundo-teste-pos-rocketseat",
+                "type": "aws:ecr/repository:Repository",
+                "inputs": {
+                    "__defaults": [],
+                    "imageTagMutability": "IMMUTABLE",
+                    "name": "segundo-teste-pos-rocketseat",
+                    "region": "us-east-2",
+                    "tags": {
+                        "IAC": "true"
+                    },
+                    "tagsAll": {
+                        "IAC": "true"
+                    }
+                },
+                "outputs": {
+                    "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"delete\":1200000000000}}",
+                    "__pulumi_raw_state_delta": {
+                        "obj": {
+                            "ps": {
+                                "encryptionConfigurations": {
+                                    "arr": {
+                                        "el": {
+                                            "0": {
+                                                "obj": {}
+                                            }
+                                        }
+                                    }
+                                },
+                                "imageScanningConfiguration": {
+                                    "plu": {
+                                        "i": {
+                                            "obj": {}
+                                        }
+                                    }
+                                },
+                                "imageTagMutabilityExclusionFilters": {
+                                    "arr": {}
+                                },
+                                "tags": {
+                                    "map": {}
+                                },
+                                "tagsAll": {
+                                    "map": {}
+                                }
+                            },
+                            "renamed": {
+                                "encryptionConfigurations": "encryption_configuration",
+                                "imageTagMutabilityExclusionFilters": "image_tag_mutability_exclusion_filter"
+                            }
+                        }
+                    },
+                    "arn": "arn:aws:ecr:us-east-2:390403897676:repository/segundo-teste-pos-rocketseat",
+                    "encryptionConfigurations": [
+                        {
+                            "encryptionType": "AES256",
+                            "kmsKey": ""
+                        }
+                    ],
+                    "forceDelete": null,
+                    "id": "segundo-teste-pos-rocketseat",
+                    "imageScanningConfiguration": {
+                        "scanOnPush": false
+                    },
+                    "imageTagMutability": "IMMUTABLE",
+                    "imageTagMutabilityExclusionFilters": [],
+                    "name": "segundo-teste-pos-rocketseat",
+                    "region": "us-east-2",
+                    "registryId": "390403897676",
+                    "repositoryUrl": "390403897676.dkr.ecr.us-east-2.amazonaws.com/segundo-teste-pos-rocketseat",
+                    "tags": {
+                        "IAC": "true"
+                    },
+                    "tagsAll": {
+                        "IAC": "true"
+                    }
+                },
+                "parent": "urn:pulumi:stg::rocketseat-iac::pulumi:pulumi:Stack::rocketseat-iac-stg",
+                "provider": "urn:pulumi:stg::rocketseat-iac::pulumi:providers:aws::default_7_24_0::2e4b9c34-0880-42ae-b61b-49d8ada5584e",
+                "propertyDependencies": {
+                    "imageTagMutability": [],
+                    "name": [],
+                    "tags": []
+                },
+                "created": "2026-04-02T00:31:22.661576585Z",
+                "modified": "2026-04-02T00:31:22.661576585Z",
+                "sourcePosition": "project:///index.ts#13,13",
+                "stackTrace": [
+                    {
+                        "sourcePosition": "project:///index.ts#13,13"
+                    },
+                    {},
+                    {
+                        "sourcePosition": "project:///node_modules/.pnpm/@pulumi+pulumi@3.228.0_typescript@5.9.3/node_modules/@pulumi/pulumi/vendor/ts-node@7.0.1/index.js#3009,23"
+                    },
+                    {},
+                    {
+                        "sourcePosition": "project:///node_modules/.pnpm/@pulumi+pulumi@3.228.0_typescript@5.9.3/node_modules/@pulumi/pulumi/vendor/ts-node@7.0.1/index.js#3011,12"
+                    },
+                    {},
+                    {},
+                    {},
+                    {},
+                    {
+                        "sourcePosition": "project:///node_modules/.pnpm/@pulumi+pulumi@3.228.0_typescript@5.9.3/node_modules/@pulumi/cmd/run/run.ts#543,33"
+                    },
+                    {
+                        "sourcePosition": "project:///node_modules/.pnpm/@pulumi+pulumi@3.228.0_typescript@5.9.3/node_modules/@pulumi/runtime/stack.ts#78,28"
+                    },
+                    {
+                        "sourcePosition": "project:///node_modules/.pnpm/@pulumi+pulumi@3.228.0_typescript@5.9.3/node_modules/@pulumi/resource.ts#1579,22"
+                    }
+                ]
+            },
+            {
+                "urn": "urn:pulumi:stg::rocketseat-iac::aws:s3/bucket:Bucket::first-bucket-widget-server-stg",
+                "custom": true,
+                "id": "first-bucket-widget-server-stg",
+                "type": "aws:s3/bucket:Bucket",
+                "inputs": {
+                    "__defaults": [
+                        "forceDestroy"
+                    ],
+                    "bucket": "first-bucket-widget-server-stg",
+                    "forceDestroy": false,
+                    "region": "us-east-2",
+                    "tags": {
+                        "IAC": "true"
+                    },
+                    "tagsAll": {
+                        "IAC": "true"
+                    }
+                },
+                "outputs": {
+                    "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":1200000000000,\"delete\":3600000000000,\"read\":1200000000000,\"update\":1200000000000}}",
+                    "__pulumi_raw_state_delta": {
+                        "obj": {
+                            "ps": {
+                                "corsRules": {
+                                    "arr": {}
+                                },
+                                "grants": {
+                                    "arr": {
+                                        "el": {
+                                            "0": {
+                                                "obj": {
+                                                    "ps": {
+                                                        "permissions": {
+                                                            "arr": {}
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "lifecycleRules": {
+                                    "arr": {}
+                                },
+                                "logging": {
+                                    "plu": {
+                                        "i": {}
+                                    }
+                                },
+                                "objectLockConfiguration": {
+                                    "plu": {
+                                        "i": {}
+                                    }
+                                },
+                                "replicationConfiguration": {
+                                    "plu": {
+                                        "i": {}
+                                    }
+                                },
+                                "serverSideEncryptionConfiguration": {
+                                    "plu": {
+                                        "i": {
+                                            "obj": {
+                                                "ps": {
+                                                    "rule": {
+                                                        "plu": {
+                                                            "i": {
+                                                                "obj": {
+                                                                    "ps": {
+                                                                        "applyServerSideEncryptionByDefault": {
+                                                                            "plu": {
+                                                                                "i": {
+                                                                                    "obj": {}
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "tags": {
+                                    "map": {}
+                                },
+                                "tagsAll": {
+                                    "map": {}
+                                },
+                                "versioning": {
+                                    "plu": {
+                                        "i": {
+                                            "obj": {}
+                                        }
+                                    }
+                                },
+                                "website": {
+                                    "plu": {
+                                        "i": {}
+                                    }
+                                }
+                            },
+                            "renamed": {
+                                "corsRules": "cors_rule",
+                                "grants": "grant",
+                                "lifecycleRules": "lifecycle_rule"
+                            }
+                        }
+                    },
+                    "accelerationStatus": "",
+                    "acl": null,
+                    "arn": "arn:aws:s3:::first-bucket-widget-server-stg",
+                    "bucket": "first-bucket-widget-server-stg",
+                    "bucketDomainName": "first-bucket-widget-server-stg.s3.amazonaws.com",
+                    "bucketNamespace": "global",
+                    "bucketPrefix": "",
+                    "bucketRegion": "us-east-2",
+                    "bucketRegionalDomainName": "first-bucket-widget-server-stg.s3.us-east-2.amazonaws.com",
+                    "corsRules": [],
+                    "forceDestroy": false,
+                    "grants": [
+                        {
+                            "id": "6d7a067016ec12419d0ffd236a382cd0a0c98dd9cd512b1960a995d51d8e9d46",
+                            "permissions": [
+                                "FULL_CONTROL"
+                            ],
+                            "type": "CanonicalUser",
+                            "uri": ""
+                        }
+                    ],
+                    "hostedZoneId": "Z2O1EMRO9K5GLX",
+                    "id": "first-bucket-widget-server-stg",
+                    "lifecycleRules": [],
+                    "logging": null,
+                    "objectLockConfiguration": null,
+                    "objectLockEnabled": false,
+                    "policy": "",
+                    "region": "us-east-2",
+                    "replicationConfiguration": null,
+                    "requestPayer": "BucketOwner",
+                    "serverSideEncryptionConfiguration": {
+                        "rule": {
+                            "applyServerSideEncryptionByDefault": {
+                                "kmsMasterKeyId": "",
+                                "sseAlgorithm": "AES256"
+                            },
+                            "bucketKeyEnabled": false
+                        }
+                    },
+                    "tags": {
+                        "IAC": "true"
+                    },
+                    "tagsAll": {
+                        "IAC": "true"
+                    },
+                    "versioning": {
+                        "enabled": false,
+                        "mfaDelete": false
+                    },
+                    "website": null,
+                    "websiteDomain": null,
+                    "websiteEndpoint": null
+                },
+                "parent": "urn:pulumi:stg::rocketseat-iac::pulumi:pulumi:Stack::rocketseat-iac-stg",
+                "provider": "urn:pulumi:stg::rocketseat-iac::pulumi:providers:aws::default_7_24_0::2e4b9c34-0880-42ae-b61b-49d8ada5584e",
+                "propertyDependencies": {
+                    "bucket": [],
+                    "tags": []
+                },
+                "created": "2026-04-02T00:38:55.281969323Z",
+                "modified": "2026-04-02T00:38:55.281969323Z",
+                "sourcePosition": "project:///index.ts#6,28",
+                "stackTrace": [
+                    {
+                        "sourcePosition": "project:///index.ts#6,28"
+                    },
+                    {},
+                    {
+                        "sourcePosition": "project:///node_modules/.pnpm/@pulumi+pulumi@3.228.0_typescript@5.9.3/node_modules/@pulumi/pulumi/vendor/ts-node@7.0.1/index.js#3009,23"
+                    },
+                    {},
+                    {
+                        "sourcePosition": "project:///node_modules/.pnpm/@pulumi+pulumi@3.228.0_typescript@5.9.3/node_modules/@pulumi/pulumi/vendor/ts-node@7.0.1/index.js#3011,12"
+                    },
+                    {},
+                    {},
+                    {},
+                    {},
+                    {
+                        "sourcePosition": "project:///node_modules/.pnpm/@pulumi+pulumi@3.228.0_typescript@5.9.3/node_modules/@pulumi/cmd/run/run.ts#543,33"
+                    },
+                    {
+                        "sourcePosition": "project:///node_modules/.pnpm/@pulumi+pulumi@3.228.0_typescript@5.9.3/node_modules/@pulumi/runtime/stack.ts#78,28"
+                    },
+                    {
+                        "sourcePosition": "project:///node_modules/.pnpm/@pulumi+pulumi@3.228.0_typescript@5.9.3/node_modules/@pulumi/resource.ts#1579,22"
+                    }
+                ]
+            }
+        ],
+        "metadata": {}
+    }
+}

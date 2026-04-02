@@ -10,3 +10,7 @@ Ferramentas
   - Terraform - Funciona em todas as clouds, agnostica
   - CDK do seu cloud provider- Vai te gerar lockin
   - Pulumi - Funciona em todas as clouds, agnostica
+
+
+Estado 
+  - 
