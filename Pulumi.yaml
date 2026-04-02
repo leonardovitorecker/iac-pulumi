@@ -1,0 +1,10 @@
+name: rocketseat-iac
+description: Projeto IAC Pôs Graduação 360 edeveloper
+runtime:
+  name: nodejs
+  options:
+    packagemanager: pnpm
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: aws-typescript
